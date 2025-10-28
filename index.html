@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PixoART</title>
+</head>
+<body>
+    <h1 id="title">PixoART</h1>
+    <p id="subtitle">Finding pixel art, simplified.</p>
+    <div id="search_container">
+        <input type="text" id="search_bar", placeholder="Search, explore and find...">
+        <button id="search_button">Search</button>
+    </div>
+    <section id="section">
+        <p id="pixel_art">Pixel Art Collection:</p>
+    </section>
+    <div id="apple_container" class="item">
+        <p id="apple">Apple</p>
+        <img src="Apple.png" alt="Pixel Art Apple">
+        <button id="download_apple_button" onclick="downloadApple()">Download Apple</button>
+        <script>
+            function downloadApple() {
+                const link = document.createElement('a');
+                link.href = 'Apple.png';
+                link.download = 'Apple.png';
+                link.click();
+            }
+        </script>
+    </div>
+    <div id="cookie_container" class="item">
+        <p id="cookie">Cookie</p>
+        <img src="Cookie.png" alt="Pixel Art Cookie">
+        <button id="download_cookie_button" onclick="downloadCookie()">Download Cookie</button>
+        <script>
+            function downloadCookie() {
+                const link = document.createElement('a');
+                link.href = 'Cookie.png';
+                link.download = 'Cookie.png';
+                link.click();
+            }
+        </script>
+
+    <script>
+            document.getElementById('search_button').addEventListener('click', function () {
+            const query = document.getElementById('search_bar').value.toLowerCase();
+            const items = document.querySelectorAll('.item');
+
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(query)) {
+                item.style.display = 'block';
+                } else {
+                item.style.display = 'none';
+                }
+            });
+            });
+    </script>
+    <div id="information">
+        <p>© PixoART. All pixel art made by me.</p>
+    </div>
+</body>
+</html>
