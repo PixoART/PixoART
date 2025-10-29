@@ -19,6 +19,15 @@ body {
     font-size: 50px;
 }
 
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
 #subtitle {
     text-align: center;
     color: rgb(255, 255, 255);
@@ -29,7 +38,7 @@ body {
     font-family: 'Pixel';
     border-radius: 5px;
     border: 1px solid white;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(29, 29, 29);
     color: white;
     padding: 10px;
     width: 300px;
@@ -39,14 +48,14 @@ body {
     font-family: 'Pixel';
     border-radius: 5px;
     border: 1px solid white;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(29, 29, 29);
     color: white;
     padding: 10px 15px;
     cursor: pointer;
 }
 
 #search_button:hover {
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(49, 49, 49);
 }
 
 #apple_container {
@@ -61,14 +70,14 @@ body {
     font-family: 'Pixel';
     border-radius: 5px;
     border: 1px solid white;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(29, 29, 29);
     color: white;
     padding: 10px 15px;
     cursor: pointer;
 }
 
 #download_apple_button:hover {
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(49, 49, 49);
 }
 
 #section {
@@ -91,14 +100,14 @@ body {
     font-family: 'Pixel';
     border-radius: 5px;
     border: 1px solid white;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(29, 29, 29);
     color: white;
     padding: 10px 15px;
     cursor: pointer;
 }
 
 #download_cookie_button:hover {
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(49, 49, 49);
 }
 
 #information {
@@ -106,5 +115,36 @@ body {
     color: white;
     border-radius: 5px;
     border: 1px solid white;
+}
+
+#about_me_button {
+    font-family: 'Pixel';
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#about_me_button:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+#about_me_title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Pixel';
+    font-size: 40px;
     margin-top: 20px;
+}
+
+#about_me_content {
+    font-family: 'Pixel';
+    color: white;
+    margin: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
 }
