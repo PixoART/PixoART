@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Pixo_Logo.ico">
     <title>PixoART</title>
 </head>
 <body>
-    <h1 id="title">PixoART</h1>
+    <h1 id="title"><img id="logo" src="Pixo_Logo.ico" alt="Pixo Logo", width="70.34375" height="70.3125">PixoART</h1>
     <p id="subtitle">Finding pixel art, simplified.</p>
     <div id="search_container">
         <input type="text" id="search_bar", placeholder="Search, explore and find...">
@@ -58,7 +59,13 @@
             });
     </script>
     <div id="information">
-        <p>© PixoART. All pixel art made by me.</p>
+        <p>© PixoART. All rights reserved.</p>
+        <button id="about_me_button" onclick="goToAboutMePage()">About Me</button>
     </div>
+    <script>
+        function goToAboutMePage() {
+            window.location.href = "about_me.html";
+        }
+    </script>
 </body>
 </html>
