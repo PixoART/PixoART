@@ -42,7 +42,18 @@
                 link.click();
             }
         </script>
+    </div>
 
+    <div id="information">
+        <p>© PixoART. All rights reserved.</p>
+        <button id="about_me_button" onclick="goToAboutMePage()">About Me</button>
+    </div>
+    <script>
+        function goToAboutMePage() {
+            window.location.href = "about_me.html";
+        }
+
+    </script>
     <script>
             document.getElementById('search_button').addEventListener('click', function () {
             const query = document.getElementById('search_bar').value.toLowerCase();
@@ -57,15 +68,6 @@
                 }
             });
             });
-    </script>
-    <div id="information">
-        <p>© PixoART. All rights reserved.</p>
-        <button id="about_me_button" onclick="goToAboutMePage()">About Me</button>
-    </div>
-    <script>
-        function goToAboutMePage() {
-            window.location.href = "about_me.html";
-        }
     </script>
 </body>
 </html>
