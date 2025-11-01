@@ -122,6 +122,28 @@ body {
     background-color: rgb(49, 49, 49);
 }
 
+#window_container {
+    font-family: 'Pixel';
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#download_window_button {
+    font-family: 'Pixel';
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#download_window_button:hover {
+    background-color: rgb(49, 49, 49);
+}
+
 #information {
     font-family: 'Pixel';
     color: white;
