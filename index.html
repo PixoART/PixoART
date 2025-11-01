@@ -43,7 +43,19 @@
             }
         </script>
     </div>
-
+    <div id="window_container">
+        <p id="window">Window</p>
+        <img src="Window.png" alt="Pixel Art Window" width="103.125" height="134.375">
+        <button id="download_window_button" onclick="downloadWindow()">Download Window</button>
+        <script>
+            function downloadWindow() {
+                const link = document.createElement('a');
+                link.href = 'Window.png';
+                link.download = 'Window.png';
+                link.click();
+            }
+        </script>
+    </div>
     <div id="information">
         <p>© PixoART. All rights reserved.</p>
         <button id="about_me_button" onclick="goToAboutMePage()">About Me</button>
